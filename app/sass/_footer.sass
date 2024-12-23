@@ -1,0 +1,396 @@
+.footer
+  background: #373A36
+  padding: 40px 0 20px 0
+  position: relative
+  z-index: 1
+  @media (max-width: 1919px)
+    padding: 35px 0 20px 0
+  @media (max-width: 1439px)
+    padding: 30px 0 20px 0
+  @media (max-width: 1279px)
+    padding: 30px 0 15px 0
+  @media (max-width: 767px)
+    padding: 30px 0 20px 0
+  .container
+    flex-direction: column
+.footer__top
+  display: flex
+  justify-content: space-between
+  margin-bottom: 40px
+  align-items: flex-end
+  @media (max-width: 1599px)
+    margin-bottom: 35px
+  @media (max-width: 1439px)
+    margin-bottom: 30px
+
+.footer__logo
+  display: flex
+  width: 194px
+  height: 82px
+  @media (max-width: 1599px)
+    width: 188px
+    height: 79px
+  @media (max-width: 1439px)
+    width: 155px
+    height: 65px
+  @media (max-width: 1023px)
+    width: 144px
+    height: 60px
+  svg
+    width: 100%
+    height: 100%
+.footer__socials
+  display: flex
+  align-items: flex-end
+  margin-right: 181px
+  @media (max-width: 1919px)
+    margin-right: 119px
+  @media (max-width: 1599px)
+    margin-right: 81px
+  @media (max-width: 1439px)
+    margin-right: 51px
+  @media (max-width: 1279px)
+    margin-right: 0
+  @media (max-width: 1023px)
+    display: none
+  @media (max-width: 767px)
+    margin-top: 20px
+.footer__social
+  display: flex
+  border: 1px solid #FFFFFF
+  border-radius: 20px
+  width: 52px
+  height: 42px
+  align-items: center
+  justify-content: center
+  transition-duration: .5s
+  &:hover
+    background: #FFFFFF
+    svg
+      path
+        fill: #373A36
+  svg
+    path
+      transition-duration: .5s
+  &:not(:last-child)
+    margin-right: 30px
+    @media (max-width: 767px)
+      margin-right: 20px
+  &:nth-child(2)
+    transition-delay: .2s
+  &:nth-child(3)
+    transition-delay: .4s
+.footer__mid
+  display: flex
+  justify-content: space-between
+  margin-bottom: 30px
+  @media (max-width: 1279px)
+    margin-bottom: 20px
+  @media (max-width: 1023px)
+    flex-direction: column
+  @media (max-width: 767px)
+    margin-bottom: 101px
+.footer__left
+  display: flex
+  flex-direction: column
+  @media (max-width: 1023px)
+    padding-bottom: 30px
+    margin-bottom: 30px
+    border-bottom: 1px solid #5C5F5B
+  .footer__sub-menu
+    @media (max-width: 1023px)
+      display: none
+    @media (max-width: 767px)
+      position: absolute
+
+.footer__menu
+  display: flex
+  margin-bottom: 45px
+  @media (max-width: 1439px)
+    margin-bottom: 38px
+  @media (max-width: 1023px)
+    margin-bottom: 0
+    justify-content: space-between
+  @media (max-width: 767px)
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 15px 20px
+.footer__link
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 23px
+  color: #FFFFFF
+  position: relative
+  @media (max-width: 1599px)
+    font-size: 16px
+    line-height: 21px
+  @media (max-width: 1439px)
+    font-size: 14px
+    line-height: 18px
+  @media (max-width: 767px)
+    font-size: 16px
+    line-height: 21px
+  &:hover
+    &:after
+      opacity: 1
+      visibility: visible
+      transform: translateY(0)
+      background: #C59217
+      @media (max-width: 767px)
+        display: none
+  &:after
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 0
+    opacity: 0
+    visibility: hidden
+    pointer-events: none
+    width: 100%
+    height: 1px
+    background: #373A36
+    transform: translateY(-10px)
+    transition-duration: 0.8s
+  &:not(:last-child)
+    margin-right: 40px
+    @media (max-width: 1023px)
+      margin-right: 0
+  &:nth-child(2)
+    transition-delay: .2s
+  &:nth-child(3)
+    transition-delay: .3s
+  &:nth-child(4)
+    transition-delay: .4s
+  &:nth-child(5)
+    transition-delay: .5s
+  &:nth-child(6)
+    transition-delay: .6s
+.footer__sub-menu
+  display: flex
+.footer_sub-link
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 21px
+  color: #888B87
+  transition-duration: 1s
+  position: relative
+  @media (max-width: 1599px)
+    font-size: 14px
+    line-height: 18px
+
+  &:hover
+    color: #fff
+  &:not(:last-child)
+    margin-right: 40px
+    @media (max-width: 767px)
+      margin-right: 0
+      margin-bottom: 15px
+  &:nth-child(2)
+    transition-delay: .2s
+.footer__right-wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+  @media (max-width: 767px)
+    position: relative
+.footer__right
+  display: flex
+  flex-direction: column
+  margin-right: 152px
+  @media (max-width: 1919px)
+    margin-right: 82px
+  @media (max-width: 1599px)
+    margin-right: 79px
+  @media (max-width: 1439px)
+    margin-right: 76px
+  @media (max-width: 1279px)
+    margin-right: 0
+  @media (max-width: 1023px)
+    flex-direction: row
+  @media (max-width: 767px)
+    flex-direction: column
+  .footer__socials
+    display: none
+    @media (max-width: 1023px)
+      display: flex
+      margin-left: auto
+      margin-bottom: auto
+    @media (max-width: 767px)
+      margin-right: auto
+      margin-bottom: 0
+      margin-left: 0
+  .footer__sub-menu
+    display: none
+    @media (max-width: 1023px)
+      display: flex
+      margin-top: 30px
+    @media (max-width: 767px)
+      position: absolute
+      bottom: -92px
+      left: 0
+      flex-direction: column
+      transform: translateY(100%)
+.footer-location
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 23px
+  color: #FFFFFF
+  margin-bottom: auto
+  @media (max-width: 1599px)
+    font-size: 16px
+    line-height: 21px
+  @media (max-width: 1439px)
+    font-size: 14px
+    line-height: 18px
+  @media (max-width: 1023px)
+    margin-bottom: 20px
+  @media (max-width: 767px)
+    font-size: 16px
+    line-height: 21px
+.footer-mail
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 23px
+  color: #FFFFFF
+  margin-right: auto
+  @media (max-width: 1599px)
+    font-size: 16px
+    line-height: 21px
+  @media (max-width: 1439px)
+    font-size: 14px
+    line-height: 18px
+  @media (max-width: 767px)
+    font-size: 16px
+    line-height: 21px
+  &:hover
+    &:after
+      opacity: 1
+      visibility: visible
+      transform: translateY(0)
+      background: #C59217
+      @media (max-width: 767px)
+        display: none
+  &:after
+    content: ''
+    position: absolute
+    bottom: -10px
+    left: 0
+    opacity: 0
+    visibility: hidden
+    pointer-events: none
+    width: 100%
+    height: 1px
+    background: #373A36
+    transform: translateY(-10px)
+    transition-duration: 0.8s
+.footer__bot
+  display: flex
+  justify-content: space-between
+  padding-top: 20px
+  border-top: 1px solid #5C5F5B
+  @media (max-width: 1279px)
+    padding-top: 15px
+  @media (max-width: 767px)
+    padding-top: 20px
+    flex-direction: column
+  .footer-security
+    font-family: PT Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 21px
+    color: #888B87
+    @media (max-width: 1599px)
+      font-size: 14px
+      line-height: 18px
+    @media (max-width: 767px)
+      margin-bottom: 15px
+      text-align: center
+  .footer__made
+    font-family: PT Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 21px
+    color: #888B87
+    @media (max-width: 1599px)
+      font-size: 14px
+      line-height: 18px
+    @media (max-width: 767px)
+      text-align: center
+    a
+      font-weight: 700
+      color: inherit
+      transition-duration: 1s
+      &:hover
+        color: #fff
+
+.scroll-btn
+  position: fixed
+  width: 45px
+  height: 57px
+  right: 35px
+  bottom: 30px
+  border: 1px solid #DDDEE7
+  border-radius: 60px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #FFFFFF
+  cursor: pointer
+  opacity: 0
+  visibility: hidden
+  transform: translateY(20px)
+  transition-duration: .8s
+  z-index: 100
+  @media (max-width: 1439px)
+    right: 25px
+    bottom: 20px
+  @media (max-width: 1023px)
+    width: 25px
+    height: 34px
+    right: 10px
+    bottom: 10px
+  &:hover
+    background: #551C25
+    border-color: #551C25
+    svg
+      path
+        fill: #FFFFFF
+  svg
+    @media (max-width: 1023px)
+      width: 10px
+      height: 10px
+    path
+      transition-duration: .8s
+.scroll-btn.active
+  opacity: 1
+  visibility: visible
+  transform: translateY(0)
+
+.footer .fade_out
+  transform: translateY(12px)
+.footer .fade_in
+  transform: translate(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,190 @@
+.around
+  display: flex
+  align-items: flex-start
+  @media (max-width: 1023px)
+    margin-bottom: 40px
+  &__left
+    width: 50.78125%
+    padding: 140px 172px 0 120px
+    @media (max-width: 1919px)
+      padding: 120px 150px 0 100px
+    @media (max-width: 1599px)
+      padding: 100px 130px 0 80px
+    @media (max-width: 1439px)
+      padding: 80px 110px 0 80px
+    @media (max-width: 1279px)
+      padding: 140px 60px 0 40px
+    @media (max-width: 1023px)
+      width: 100%
+      padding: 0 35px
+    @media (max-width: 767px)
+      padding: 0 20px
+  &-title
+    font-family: 'PT Sans'
+    font-style: normal
+    font-weight: 700
+    font-size: 32px
+    line-height: 41px
+    text-transform: uppercase
+    color: #373A36
+    margin-bottom: 30px
+    padding-bottom: 30px
+    width: 100%
+    background-color: #fff
+    z-index: 10
+    @media (max-width: 1439px)
+      font-size: 28px
+      line-height: 130%
+    @media (max-width: 1023px)
+      margin-bottom: 20px
+      padding-bottom: 20px
+    @media (max-width: 767px)
+      font-size: 24px
+      margin-bottom: 20px
+      padding-bottom: 0
+  &__items
+    display: flex
+    flex-direction: column
+  &__item
+    display: flex
+    flex-direction: column
+    min-height: calc(100vh - 110px)
+    @media (max-width: 1599px)
+      min-height: calc(100vh - 95px)
+    @media (max-width: 1439px)
+      min-height: calc(100vh - 75px)
+    @media (max-width: 1023px)
+      min-height: auto
+    &:not(:last-child)
+      margin-bottom: 50px
+      @media (max-width: 767px)
+        margin-bottom: 30px
+    &:last-child
+      min-height: calc(100vh - 150px)
+      @media (max-width: 1599px)
+        min-height: calc(100vh - 110px)
+      @media (max-width: 1023px)
+        min-height: auto
+    .ul
+      padding-left: 120px
+      margin-bottom: 0
+      @media (max-width: 1599px)
+        padding-left: 80px
+      @media (max-width: 1439px)
+        padding-left: 50px
+      @media (max-width: 767px)
+        padding-left: 30px
+      .li
+        color: #888B87
+        &:not(:last-child)
+          margin-bottom: 30px
+          @media (max-width: 1439px)
+            margin-bottom: 15px
+    &-gold
+      color: #C59217
+      margin-bottom: 60px
+      @media (max-width: 1023px)
+        margin-bottom: 20px
+        padding-bottom: 20px
+      @media (max-width: 767px)
+        font-size: 18px
+        margin-bottom: 20px
+        padding-bottom: 0
+    &-svg
+      display: none
+      @media (max-width: 1023px)
+        display: block
+        width: 100%
+        height: 400px
+      @media (max-width: 767px)
+        height: 270px
+        width: auto
+    &-top
+      display: flex
+      align-items: center
+      padding-bottom: 30px
+      border-bottom: 1px solid #F0F1F8
+      margin-bottom: 30px
+      @media (max-width: 1279px)
+        padding-bottom: 20px
+        margin-bottom: 20px
+      @media (max-width: 767px)
+        padding-bottom: 10px
+        margin-bottom: 10px
+      &-num
+        font-family: 'PT Sans'
+        font-style: normal
+        font-weight: 400
+        font-size: 55px
+        line-height: 71px
+        letter-spacing: 0.05em
+        color: #C59217
+        opacity: 0.9
+        margin-right: 40px
+        @media (max-width: 1439px)
+          margin-right: 20px
+          font-size: 40px
+          line-height: 130%
+        @media (max-width: 767px)
+          font-size: 30px
+  &__right
+    width: 49.21875%
+    position: sticky
+    height: calc(100vh - 110px)
+    top: 110px
+    @media (max-width: 1599px)
+      height: calc(100vh - 95px)
+      top: 95px
+    @media (max-width: 1439px)
+      height: calc(100vh - 75px)
+      top: 75px
+    @media (max-width: 1023px)
+      display: none
+    svg
+      width: 100%
+      height: 100%
+      #around-1, #around-2, #around-3, #around-5, #around-6, #around-7
+        opacity: 0
+        visibility: hidden
+        transition: all .4s ease-in-out
+  &.scrolled-1
+    #around-1
+      opacity: 1
+      visibility: visible
+  &.scrolled-2
+    #around-2
+      opacity: 1
+      visibility: visible
+  &.scrolled-3
+    #around-3
+      opacity: 1
+      visibility: visible
+  &.scrolled-5
+    #around-5
+      opacity: 1
+      visibility: visible
+  &.scrolled-6
+    #around-6
+      opacity: 1
+      visibility: visible
+  &.scrolled-7
+    #around-7
+      opacity: 1
+      visibility: visible
+  &_reverse
+    flex-direction: row-reverse
+    .around__left
+      padding: 140px 120px 0 172px
+      @media (max-width: 1919px)
+        padding: 120px 100px 0 150px
+      @media (max-width: 1599px)
+        padding: 100px 80px 0 130px
+      @media (max-width: 1439px)
+        padding: 80px 80px 0 110px
+      @media (max-width: 1279px)
+        padding: 140px 40px 0 60px
+      @media (max-width: 1023px)
+        width: 100%
+        padding: 0 35px
+      @media (max-width: 767px)
+        padding: 0 20px

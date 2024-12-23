@@ -1,0 +1,174 @@
+.invest
+  padding: 60px 0 140px 0
+  @media (max-width: 1919px)
+    padding-bottom: 130px
+  @media (max-width: 1599px)
+    padding: 60px 0 120px 0
+  @media (max-width: 1439px)
+    padding: 40px 0 100px 0
+  @media (max-width: 1279px)
+    padding-bottom: 96px
+  @media (max-width: 1023px)
+    padding: 30px 0 80px 0
+  @media (max-width: 767px)
+    padding: 30px 0 70px 0
+  .container
+    flex-direction: column
+
+.invest__top
+  max-width: 1110px
+  margin: 0 auto 100px auto
+  align-items: center
+  @media (max-width: 1439px)
+    margin-bottom: 70px
+  @media (max-width: 1023px)
+    margin-bottom: 50px
+.invest-sub
+  text-align: center
+  margin-top: 30px
+  @media (max-width: 1023px)
+    margin-top: 20px
+.invest__cont
+  display: flex
+  @media (max-width: 1439px)
+    justify-content: space-between
+  @media (max-width: 1023px)
+    flex-direction: column
+.invest__img
+  width: 43.8%
+  height: calc(100vh - 110px)
+  margin-right: 173px
+  position: sticky
+  top: 110px
+  @media (max-width: 1599px)
+    height: calc(100vh - 95px)
+    top: 95px
+  @media (max-width: 1439px)
+    height: calc(100vh - 75px)
+    top: 75px
+    width: 49.5%
+    margin-right: 0
+  @media (max-width: 1023px)
+    width: 100%
+    position: static
+    height: 711px
+  @media (max-width: 767px)
+    height: 285px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.invest__right
+  display: flex
+  flex-direction: column
+  width: 36.3%
+  padding-top: 100px
+  @media (max-width: 1439px)
+    padding-top: 70px
+    width: 40.8%
+  @media (max-width: 1023px)
+    width: 100%
+    padding-top: 40px
+.invest-right-title
+  margin-bottom: 30px
+  @media (max-width: 1439px)
+    margin-bottom: 20px
+.invest__right-p
+  margin-bottom: 30px
+.invest__right-p-ul
+  margin-bottom: 15px
+  @media (max-width: 767px)
+    margin-bottom: 10px
+
+.invest__items
+  display: flex
+  flex-direction: column
+.invest__item
+  display: flex
+  flex-direction: column
+  &:not(:last-child)
+    margin-bottom: 40px
+    @media (max-width: 1439px)
+      margin-bottom: 30px
+.invest__item-top
+  display: flex
+  align-items: center
+  justify-content: space-between
+  cursor: pointer
+  svg
+    @media (max-width: 1439px)
+      width: 14px
+      height: 10px
+    @media (max-width: 767px)
+      width: 10px
+      height: 8px
+.invest__item-bot
+  padding-top: 30px
+  display: none
+  @media (max-width: 767px)
+    padding-top: 40px
+.invest__row
+  display: flex
+  justify-content: space-between
+  border-bottom: 1px solid rgba(240, 241, 248, 1)
+  align-items: stretch
+  @media (max-width: 767px)
+    flex-direction: column
+    padding: 20px 0
+  &:first-child
+    border-top: 1px solid rgba(240, 241, 248, 1)
+.invest-row-title
+  padding: 20px 30px 20px 0
+  width: 100%
+  position: relative
+  @media (max-width: 1439px)
+    padding: 20px 20px 20px 0
+  @media (max-width: 767px)
+    margin-bottom: 15px
+    padding: 0
+  &:after
+    content: ''
+    position: absolute
+    right: 0
+    top: 0
+    width: 1px
+    background: rgba(240, 241, 248, 1)
+    height: 100%
+    @media (max-width: 767px)
+      display: none
+.invest-row-download
+  min-width: 254px
+  width: 254px
+  padding: 20px 30px 20px 30px
+  margin: auto 0
+  display: flex
+  align-items: center
+  height: 100%
+  @media (max-width: 1439px)
+    padding: 20px
+    min-width: 170px
+    width: 170px
+  @media (max-width: 1023px)
+    min-width: 242px
+    width: 242px
+  @media (max-width: 767px)
+    padding: 0
+    margin-right: auto
+    min-width: auto
+    width: auto
+  &:hover
+    .btn-text
+      color: rgba(197, 146, 23, 1)
+  svg
+    margin-right: 15px
+    transition-duration: .4s
+    @media (max-width: 1439px)
+      margin-right: 10px
+      width: 25px
+      height: 25px
+  .btn-text
+    transition-duration: .4s
+.invest__item.active
+  .invest__item-top
+    svg
+      transform: rotate(180deg)

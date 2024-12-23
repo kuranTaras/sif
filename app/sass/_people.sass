@@ -1,0 +1,146 @@
+.people
+  padding: 140px 0
+  @media (max-width: 1919px)
+    padding: 130px 0
+  @media (max-width: 1599px)
+    padding: 120px 0
+  @media (max-width: 1439px)
+    padding: 100px 0
+  @media (max-width: 1279px)
+    padding: 90px 0
+  @media (max-width: 1023px)
+    padding: 80px 0
+  @media (max-width: 767px)
+    padding: 70px 0
+  .container
+    flex-direction: column
+    .btn
+      margin-left: 40px
+      @media (max-width: 1279px)
+        margin-left: auto
+.people__top
+  display: flex
+  align-items: flex-end
+  margin-bottom: 60px
+  @media (max-width: 1439px)
+    margin-bottom: 40px
+  @media (max-width: 1279px)
+    margin-bottom: 30px
+    align-items: center
+  .btn
+    @media (max-width: 1279px)
+      display: none
+.people__slider
+  width: 100%
+.people__wrapper
+  display: flex
+.people__slide.swiper-slide
+  height: 100%
+  min-height: 100%
+.people__slide
+  display: flex
+  flex-direction: column
+
+  &:hover
+    .people__slide-btn
+      opacity: 1
+      visibility: visible
+      transform: translateY(0)
+    img
+      filter: grayscale(0)
+.people__slide.fade_out
+  @media (max-width: 1023px)
+    transform: translate(0)
+.people__slide-img
+  width: 100%
+  height: 300px
+  @media (max-width: 1919px)
+    height: 245px
+  @media (max-width: 1599px)
+    height: 222px
+  @media (max-width: 1439px)
+    height: 199px
+  @media (max-width: 1279px)
+    height: 244px
+  @media (max-width: 1023px)
+    height: 180px
+  @media (max-width: 767px)
+    height: 300px
+  @media (max-width: 599px)
+    height: 250px
+  @media (max-width: 450px)
+    height: 200px
+  @media (max-width: 375px)
+    height: 153px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+    transition-duration: .8s
+    filter: grayscale(1)
+.people__slide-text
+  padding: 20px 0
+  display: flex
+  flex-grow: 1
+  max-height: 100%
+  flex-direction: column
+  @media (max-width: 1279px)
+    padding: 15px 0
+.people__slide-name
+  margin-bottom: 10px
+  @media (max-width: 1279px)
+    margin-bottom: 15px
+  @media (max-width: 767px)
+    margin-bottom: 10px
+.people__slide-position
+  color: #5C5F5B
+  margin-bottom: auto
+.people__slide-btn
+  opacity: 0
+  visibility: hidden
+  transition-duration: .8s
+  transform: translateY(10px)
+  margin-top: 10px
+  display: flex
+  align-items: center
+  margin-right: auto
+  @media (max-width: 767px)
+    display: none
+  &:hover
+    span
+      color: #373A36
+    svg
+      path
+        fill: #373A36
+  span
+    color: #551C25
+    transition-duration: 1s
+  svg
+    path
+      transition-duration: 1s
+.people__bot
+  display: none
+  @media (max-width: 1279px)
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    flex-direction: column
+  .btn
+    display: flex
+    margin: 30px auto 0 auto
+.people__dots
+  display: flex
+  justify-content: center
+  margin: 20px auto 0 auto
+.people-dot
+  width: 10px
+  height: 10px
+  border: 1px solid #DDDEE7
+  border-radius: 10px
+  transition-duration: 1s
+  &:not(:last-child)
+    margin-right: 8px
+.people-dot.active
+  width: 15px
+  background: #551C25
+  border: 1px solid #551C25

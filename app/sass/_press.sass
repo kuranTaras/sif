@@ -1,0 +1,124 @@
+.press
+  padding-bottom: 140px
+  @media (max-width: 1919px)
+    padding: 0 0 130px 0
+  @media (max-width: 1599px)
+    padding: 0 0  120px 0
+  @media (max-width: 1439px)
+    padding: 0 0  100px 0
+  @media (max-width: 1279px)
+    padding: 0 0  90px 0
+  @media (max-width: 1023px)
+    padding: 0 0  80px 0
+  @media (max-width: 767px)
+    padding: 0 0  70px 0
+  .container
+    flex-direction: column
+.press-title
+  margin-bottom: 60px
+  @media (max-width: 1439px)
+    margin-bottom: 40px
+  @media (max-width: 1279px)
+    margin-bottom: 30px
+.press__all
+  display: grid
+  grid-template-columns: 28.1fr 57.8fr
+  grid-gap: 30px
+  @media (max-width: 1023px)
+    grid-template-columns: 1fr
+.press__items
+  display: grid
+  grid-template-columns: 1fr 1fr
+  grid-gap: 30px
+  @media (max-width: 767px)
+    grid-template-columns: 1fr
+    grid-gap: 20px
+.press__item
+  padding: 35px 30px
+  border: 1px solid #F0F1F8
+  display: flex
+  flex-direction: column
+  //height: auto!important
+  @media (max-width: 1599px)
+    padding: 30px 25px
+  @media (max-width: 1439px)
+    padding: 25px 25px
+  @media (max-width: 1279px)
+    padding: 20px
+  @media (max-width: 767px)
+    padding: 25px 20px
+  &:hover
+    background: #F8F8FA
+    border-color: #F8F8FA
+    .press__item-img
+      .press__item-dark
+        opacity: 0
+        visibility: hidden
+  &:nth-child(2)
+    transition-delay: .2s
+  &:nth-child(3)
+    transition-delay: .4s
+  &:nth-child(4)
+    transition-delay: .6s
+.press__big
+  &:hover
+    background: none
+.press__item.fade_in
+  transition-delay: 0s
+.press__item-date
+  color: #5C5F5B
+.press__item-text-top
+  display: flex
+  align-items: center
+  margin-bottom: 17.5px
+  @media (max-width: 1439px)
+    margin-bottom: 12.5px
+  svg
+    margin: 0 15px
+.press__big-text
+  height: 100%
+.press__big
+  padding: 0
+  border: none
+.press__big-img
+  width: 100%
+  height: 270px
+  margin-bottom: 30px
+  position: relative
+  @media (max-width: 1919px)
+    height: 225px
+  @media (max-width: 1599px)
+    height: 205px
+    margin-bottom: 25px
+  @media (max-width: 1439px)
+    margin-bottom: 20px
+    height: 185px
+  @media (max-width: 1279px)
+    margin-bottom: 15px
+    height: 145px
+  @media (max-width: 1023px)
+    height: 356px
+  @media (max-width: 767px)
+    height: 140px
+  .press__item-dark
+    position: absolute
+    transition-duration: 1s
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(40, 41, 50, 0.6), rgba(40, 41, 50, 0.6))
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.press__item-news
+  .press__item-name
+    color: #551C25
+.press__item-think
+  .press__item-name
+    color: #005760
+.press__item-analytic
+  .press__item-name
+    color: #012169
+

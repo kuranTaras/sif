@@ -1,0 +1,201 @@
+.gal
+  padding: 60px 0 140px 0
+  @media (max-width: 1919px)
+    padding-bottom: 130px
+  @media (max-width: 1599px)
+    padding: 60px 0 120px 0
+  @media (max-width: 1439px)
+    padding: 40px 0 100px 0
+  @media (max-width: 1279px)
+    padding-bottom: 96px
+  @media (max-width: 1023px)
+    padding: 30px 0 80px 0
+  @media (max-width: 767px)
+    padding: 30px 0 70px 0
+  .container
+    flex-direction: column
+    @media (max-width: 1023px)
+      padding: 0
+.gal__text
+  max-width: 1110px
+  margin: 0 auto 100px auto
+  align-items: center
+  @media (max-width: 1439px)
+    margin-bottom: 70px
+  @media (max-width: 1023px)
+    margin-bottom: 50px
+    padding: 0 35px
+  @media (max-width: 767px)
+    padding: 0 20px
+.gal-sub
+  text-align: center
+  margin-top: 30px
+  @media (max-width: 1023px)
+    margin-top: 20px
+  @media (max-width: 767px)
+    text-align: left
+.gal__cont
+  display: flex
+  flex-direction: column
+.gal__item
+  display: flex
+  @media (max-width: 1919px)
+    max-height: 536px
+  @media (max-width: 1599px)
+    max-height: 490px
+  @media (max-width: 1439px)
+    max-height: 443px
+  @media (max-width: 1279px)
+    flex-direction: column
+    max-height: none
+    padding: 40px
+    background: rgba(248, 248, 250, 1)
+  @media (max-width: 1023px)
+    padding: 30px 35px
+  @media (max-width: 767px)
+    padding: 30px 20px
+  &:not(:last-child)
+    margin-bottom: 60px
+    @media (max-width: 1439px)
+      margin-bottom: 40px
+    @media (max-width: 1023px)
+      margin-bottom: 30px
+  &:nth-child(2n)
+    flex-direction: row-reverse
+    @media (max-width: 1279px)
+      flex-direction: column
+.gal__item-text
+  padding: 132px 83px 131px 90px
+  background: rgba(248, 248, 250, 1)
+  width: 42.5%
+  display: flex
+  flex-direction: column
+  justify-content: center
+  @media (max-width: 1919px)
+    padding: 85px 70px 85px 80px
+  @media (max-width: 1599px)
+    padding: 65px 60px 65px 80px
+  @media (max-width: 1439px)
+    padding: 48px 36px 48px 60px
+  @media (max-width: 1279px)
+    width: 100%
+    padding: 0
+    margin-bottom: 30px
+    background: none
+.gal-item-title
+  margin-bottom: 30px
+  @media (max-width: 1439px)
+    margin-bottom: 20px
+.gal__item-img
+  position: relative
+  width: 57.5%
+  @media (max-width: 1279px)
+    width: 100%
+.gal__item-slider
+  width: 100%
+  height: 100%
+  @media (max-width: 1279px)
+    height: 555px
+  @media (max-width: 1023px)
+    height: 464px
+  @media (max-width: 767px)
+    height: 187px
+.gal__item-slide
+  height: 100%
+  display: flex
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+.gal-item-btn
+  background: rgba(248, 248, 250, 0.3)
+  border: 1px solid #DDDEE7
+  border-radius: 60px
+  position: absolute
+  width: 57px
+  height: 45px
+  display: flex
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  top: 50%
+  transform: translateY(-50%)
+  z-index: 10
+  @media (max-width: 1279px)
+    width: 51px
+    height: 40px
+  @media (max-width: 1023px)
+    position: static
+    transform: translate(0)
+    border: 1px solid #DDDEE7
+  @media (max-width: 767px)
+    width: 40px
+    height: 30px
+  &:hover
+    svg
+      path
+        fill: rgba(55, 58, 54, 1)
+  svg
+    @media (max-width: 767px)
+      width: 6px
+      height: 10px
+    path
+      fill: rgba(255, 255, 255, 1)
+      transition-duration: 1s
+      @media (max-width: 1023px)
+        fill: rgba(55, 58, 54, 1)
+
+.gal-prev
+  left: 30px
+  @media (max-width: 1439px)
+    left: 20px
+.gal-next
+  right: 30px
+  @media (max-width: 1439px)
+    right: 20px
+.gal
+  .gal-pagination
+    left: 50%
+    position: absolute
+    width: auto
+    color: #FFFFFF
+    transform: translateX(-50%)
+    bottom: 30px
+    z-index: 10
+    @media (max-width: 1439px)
+      bottom: 20px
+    @media (max-width: 1023px)
+      position: static
+      transform: translate(0)
+      color: rgba(55, 58, 54, 1)
+.gal__nav
+  @media (max-width: 1023px)
+    display: flex
+    justify-content: space-between
+    margin-top: 15px
+    align-items: center
+.gal
+  .our__numbers
+    @media (max-width: 767px)
+      padding: 0 20px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

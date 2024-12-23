@@ -1,0 +1,305 @@
+.car
+  padding: 60px 0 140px 0
+  @media (max-width: 1919px)
+    padding-bottom: 130px
+  @media (max-width: 1599px)
+    padding: 60px 0 120px 0
+  @media (max-width: 1439px)
+    padding: 40px 0 100px 0
+  @media (max-width: 1279px)
+    padding-bottom: 96px
+  @media (max-width: 1023px)
+    padding: 30px 0 80px 0
+  @media (max-width: 767px)
+    padding: 30px 0 70px 0
+  .container
+    flex-direction: column
+    max-width: 1395px
+    padding: 0
+    @media (max-width: 1919px)
+      max-width: 1162px
+    @media (max-width: 1599px)
+      max-width: 1062px
+    @media (max-width: 1439px)
+      max-width: 962px
+    @media (max-width: 1279px)
+      max-width: 100%
+      padding: 0 55px
+    @media (max-width: 1023px)
+      padding: 0 35px
+    @media (max-width: 767px)
+      padding: 0 20px
+.car__text
+  max-width: 1110px
+  margin: 0 auto 100px auto
+  align-items: center
+  @media (max-width: 1439px)
+    margin-bottom: 70px
+  @media (max-width: 1023px)
+    margin-bottom: 50px
+.car-sub
+  text-align: center
+  margin-top: 30px
+  @media (max-width: 1023px)
+    margin-top: 20px
+.car__tabs
+  display: flex
+  flex-direction: column
+  &:not(:last-child)
+    margin-bottom: 100px
+    @media (max-width: 1919px)
+      margin-bottom: 90px
+    @media (max-width: 1439px)
+      margin-bottom: 70px
+    @media (max-width: 1279px)
+      margin-bottom: 90px
+    @media (max-width: 1023px)
+      margin-bottom: 70px
+.car__tabs-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 60px
+  @media (max-width: 1439px)
+    margin-bottom: 40px
+  @media (max-width: 1023px)
+    margin-bottom: 30px
+  @media (max-width: 767px)
+    flex-direction: column
+    align-items: normal
+.car-tabs-top-title
+  @media (max-width: 767px)
+    margin-bottom: 20px
+    margin-right: auto
+.car__tabs-btns
+  display: flex
+  align-items: center
+  @media (max-width: 1023px)
+    display: none
+  .btn-text
+    margin-right: auto
+  .car__tab-btn
+    &:not(:last-child)
+      margin-right: 20px
+.car__tab-btn.active
+  //background: rgba(40, 41, 50, 1)
+  &:before
+    left: 50%
+    top: 50%
+    background: rgba(40, 41, 50, 1)
+    width: 300px
+    height: 300px
+  .btn-text
+    color: #FFFFFF
+.car__item
+  display: flex
+  flex-direction: column
+  &:not(:last-child)
+    margin-bottom: 25px
+    @media (max-width: 1279px)
+      margin-bottom: 20px
+.car__item-top
+  display: flex
+  cursor: pointer
+  flex-direction: column
+  background: rgba(248, 248, 250, 1)
+  padding: 40px 60px
+  transition-duration: .4s
+  @media (max-width: 1279px)
+    padding: 40px
+  @media (max-width: 1023px)
+    padding: 30px 40px
+  @media (max-width: 767px)
+    padding: 20px
+  &:hover
+    background: rgba(240, 241, 248, 1)
+.car__item-top-list
+  display: flex
+  margin-bottom: 20px
+  align-items: center
+  @media (max-width: 1279px)
+    margin-bottom: 15px
+  @media (max-width: 767px)
+    flex-wrap: wrap
+    margin-bottom: 20px
+    grid-gap: 5px 0
+  span
+    &:not(:last-child)
+      margin-right: 60px
+      position: relative
+      @media (max-width: 1279px)
+        margin-right: 40px
+      @media (max-width: 767px)
+        margin-right: 11px
+      &:after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 16px
+        top: 50%
+        transform: translateY(-50%)
+        background: rgba(197, 146, 23, 1)
+        right: -30px
+        @media (max-width: 1279px)
+          right: -20px
+        @media (max-width: 767px)
+          height: 12px
+          right: -5px
+.car__item-top-main
+  display: flex
+  justify-content: space-between
+  @media (max-width: 767px)
+    flex-direction: column
+  svg
+    margin-top: auto
+    margin-left: 30px
+    min-width: 30px
+    transition-duration: .4s
+    height: 30px
+    @media (max-width: 1919px)
+      margin-left: 45px
+    @media (max-width: 1599px)
+      margin-left: 30px
+    @media (max-width: 767px)
+      margin-left: 0
+      min-width: 20px
+      margin-top: 10px
+      height: 20px
+.car__item-bot-wrapper
+  display: none
+.car__item-bot
+  padding: 40px 140px 60px 140px
+  background: #FFFFFF
+  border: 1px solid #F0F1F8
+  border-top: none
+  display: flex
+  flex-direction: column
+  @media (max-width: 1919px)
+    padding: 40px 120px 60px 120px
+  @media (max-width: 1599px)
+    padding: 40px 110px 60px 110px
+  @media (max-width: 1439px)
+    padding: 30px 100px 40px 100px
+  @media (max-width: 1279px)
+    padding: 30px 60px 40px 60px
+  @media (max-width: 1023px)
+    padding: 20px 40px 30px 40px
+  @media (max-width: 767px)
+    padding: 20px 20px 30px 20px
+.car__item-bot-title
+  margin-bottom: 20px
+  @media (max-width: 1279px)
+    margin-bottom: 15px
+.car__item-bot-p
+  margin-bottom: 30px
+  @media (max-width: 1279px)
+    margin-bottom: 20px
+.car__item-bot-title-ul
+  margin-bottom: 20px
+.car
+  .ul
+    margin-bottom: 30px
+    @media (max-width: 1279px)
+      margin-bottom: 20px
+  .btn
+    margin-right: auto
+    margin-left: 0
+    margin-top: 10px
+    @media (max-width: 767px)
+      width: 100%
+    .btn-cont
+      @media (max-width: 767px)
+        width: 100%
+        justify-content: center
+.car__item.active
+  .car__item-top
+    background: rgba(240, 241, 248, 1)
+  .car__item-top-main
+    svg
+      transform: rotate(-90deg)
+.car
+  .select2
+    width: 280px!important
+    display: none
+    @media (max-width: 1023px)
+      display: block
+    @media (max-width: 767px)
+      width: 100% !important
+  .select2-selection__rendered
+    font-family: PT Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 100%!important
+    color: #373A36
+    padding: 0!important
+  .select2-selection--single
+    border: 1px solid #373A36!important
+    border-radius: 36px!important
+    padding: 9px 20px!important
+    height: 36px!important
+  b
+    width: 10px!important
+    height: 10px!important
+    background: url("../img/38.png") no-repeat center
+    background-size: contain
+    border: none!important
+    transform: translateY(-50%) !important
+    right: 20px!important
+    left: auto!important
+  .select2-selection__arrow
+    height: 100%!important
+    width: 0!important
+    right: 0!important
+    left: auto!important
+  .select2-container--open
+    .select2-selection--single
+      border-radius: 16px 16px 0 0!important
+      border-bottom: none!important
+    b
+      transform: translateY(-50%) rotate(180deg)!important
+.select2-results__option
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 18px
+  color: rgba(136, 139, 135, 1)
+  border-top: 1px solid rgba(240, 241, 248, 1)
+  padding: 9px 20px!important
+.select2-dropdown
+  border: 1px solid #373A36!important
+  box-sizing: border-box!important
+  border-radius: 0 0 16px 16px!important
+  border-top: none!important
+.select2-search--dropdown
+  display: none!important
+
+  overflow: hidden!important
+.select2-results__option--selected
+  background: none!important
+  color: rgba(55, 58, 54, 1) !important
+.select2-results__option--highlighted
+  background: none!important
+  color: rgba(55, 58, 54, 1) !important
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

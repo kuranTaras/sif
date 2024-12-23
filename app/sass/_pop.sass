@@ -1,0 +1,175 @@
+.pop
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  z-index: 200
+  display: flex
+  opacity: 0
+  transition-duration: .6s
+  visibility: hidden
+  .bg
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: #282932
+    opacity: 0.4
+  .container
+    background: #FFFFFF
+    z-index: 1
+    transition-duration: .6s
+    transform: translateY(50px)
+    position: relative
+    margin: auto
+    flex-direction: column
+    max-width: 825px
+    padding: 70px 142.5px
+    overflow: auto
+    @media (max-width: 1023px)
+      max-width: 100%
+      height: 100%
+      padding: 0
+  form
+    @media (max-width: 1023px)
+      display: flex
+      flex-direction: column
+.pop-title
+  margin-bottom: 45px
+  text-align: center
+  @media (max-width: 1023px)
+    background: rgba(248, 248, 250, 1)
+    padding: 17px 20px
+    text-align: left
+    margin-bottom: 33px
+.pop__inputs
+  display: grid
+  grid-template-areas: 'one two' 'three four' 'five five'
+  grid-gap: 40px 30px
+  width: 100%
+  @media (max-width: 1023px)
+    display: flex
+    flex-direction: column
+    grid-gap: 0
+    margin-bottom: auto
+    padding: 0 20px
+  .contact__label
+    width: auto
+    &:not(:last-child)
+      @media (max-width: 1023px)
+        margin-bottom: 33px
+    &:first-child
+      grid-area: one
+    &:nth-child(2)
+      grid-area: two
+    &:nth-child(3)
+      grid-area: three
+    &:nth-child(4)
+      grid-area: four
+    &:nth-child(5)
+      grid-area: five
+  .input
+    width: 100%
+    margin-bottom: 0
+    max-height: 105px
+.pop
+  .btn
+    outline: none
+    border: none
+    background: none
+    margin: 50px auto 0 auto
+    @media (max-width: 1023px)
+      margin-top: 30px
+      margin-bottom: 60px
+  .btn-cont
+    border-color: rgba(55, 58, 54, 1)
+  .btn-text
+    color: rgba(55, 58, 54, 1)
+.pop__close
+  position: absolute
+  right: 40px
+  top: 40px
+  cursor: pointer
+  @media (max-width: 1023px)
+    right: 20px
+    top: 19px
+.pop.active
+  opacity: 1
+  visibility: visible
+  .container
+    transform: translateY(0)
+
+
+.pop_vacancy
+  .pop__inputs
+    grid-template-areas: 'one two' 'three four' 'five five' 'six six'
+    @media (max-width: 1023px)
+      margin-bottom: 0
+  .contact__label
+    &:nth-child(6)
+      grid-area: six
+.add__item
+  display: flex
+  margin-top: 20px
+  margin-right: auto
+  @media (max-width: 1023px)
+    padding: 0 20px
+    margin-top: 20px
+    margin-bottom: auto
+.add__item-text
+  display: flex
+  flex-direction: column
+  margin-left: 15px
+  span
+    &:last-child
+      color: rgba(136, 139, 135, 1)
+      margin-top: 5px
+
+
+.pop_thanks
+  .container
+    &:before
+      @media (max-width: 1023px)
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        width: 100%
+        height: 60px
+        background: rgba(248, 248, 250, 1)
+  .pop-title
+    margin: 40px 0 30px 0
+    @media (max-width: 1023px)
+      background: none
+      text-align: center
+      padding: 0
+      margin: 30px 0 20px 0
+.pop__wrapper
+  display: flex
+  flex-direction: column
+  @media (max-width: 1023px)
+    padding: 20px
+    margin-top: 60px
+    height: 100%
+    justify-content: center
+.pop-p
+  text-align: center
+.pop__img
+  margin: 0 auto
+  svg
+    @media (max-width: 1023px)
+      width: 40px
+      height: 40px
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,134 @@
+.benefits
+  background: #F8F8FA
+  padding-bottom: 140px
+  @media (max-width: 1919px)
+    padding-bottom: 130px
+    @media (max-width: 1599px)
+      padding-bottom: 120px
+    @media (max-width: 1439px)
+      padding-bottom: 100px
+    @media (max-width: 1279px)
+      padding-bottom: 90px
+    @media (max-width: 1023px)
+      padding-bottom: 80px
+    @media (max-width: 767px)
+      padding-bottom: 70px
+  .container
+    flex-direction: column
+
+    .btn
+      margin-left: auto
+.benefits__top
+  display: flex
+  margin-bottom: 60px
+  align-items: flex-start
+  .btn
+    @media (max-width: 1279px)
+      display: none
+.benefits__text
+  max-width: 968px
+  @media (max-width: 1919px)
+    max-width: 804px
+    @media (max-width: 1599px)
+      max-width: 734px
+    @media (max-width: 1279px)
+      max-width: 598px
+    @media (max-width: 1023px)
+      max-width: 100%
+.benefits-title
+  margin-bottom: 30px
+  @media (max-width: 1439px)
+    margin-bottom: 20px
+.benefits-sub
+  color: #373A36
+.benefits__items
+  align-items: normal
+.benefits__item
+  background: #FFFFFF
+  align-items: center
+  display: flex
+  flex-direction: column
+  min-height: 100%
+  padding: 40px
+  @media (max-width: 1919px)
+    padding: 35px 30px
+  @media (max-width: 1599px)
+    padding: 30px 25px
+  @media (max-width: 767px)
+    padding: 30px 20px
+  svg
+    @media (max-width: 1439px)
+      width: 55px
+      height: 55px
+    @media (max-width: 767px)
+      height: 55px
+      width: 55px
+    path,mask
+      transition-duration: 1s
+    mask
+      path
+        transition-duration: 1s
+  &:hover
+    svg
+      path, mask
+        fill: #551C25
+  &:nth-child(2)
+    transition-delay: .2s
+  &:nth-child(3)
+    transition-delay: .4s
+.benefits__item-img
+  width: 100%
+  max-width: 150px
+  display: flex
+  align-items: flex-start
+  height: 96px
+  border-bottom: 1px solid #DDDEE7
+  justify-content: center
+  @media (max-width: 1439px)
+    height: 76px
+.benefits__item-text
+  margin-top: 20px
+  @media (max-width: 1439px)
+    margin-top: 15px
+  @media (max-width: 767px)
+    margin-top: 20px
+.benefits-item-title, .benefits__item-sub
+  text-align: center
+.benefits-item-title
+  margin-bottom: 20px
+.benefits__bot
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  margin: 30px auto 0 auto
+  display: none
+  @media (max-width: 1279px)
+    display: flex
+  @media (max-width: 1023px)
+    margin: 20px auto 0 auto
+  .benefits__pagination
+    display: flex
+    justify-content: center
+    margin: 0 auto 30px auto
+    position: static
+  .swiper-pagination-bullet
+    width: 10px
+    height: 10px
+    border: 1px solid #DDDEE7
+    border-radius: 10px
+    background: none
+    opacity: 1
+    transition-duration: 1s
+    &:not(:last-child)
+      margin-right: 8px
+  .swiper-pagination-bullet-active
+    width: 15px
+    background: #551C25
+    border: 1px solid #551C25
+.benefits__items-wrapper
+  width: 100%
+
+
+
+
+

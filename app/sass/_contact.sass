@@ -1,0 +1,257 @@
+.contact
+  padding: 60px 0 140px 0
+  @media (max-width: 1919px)
+    padding-bottom: 130px
+  @media (max-width: 1599px)
+    padding: 60px 0 120px 0
+  @media (max-width: 1439px)
+    padding: 40px 0 100px 0
+  @media (max-width: 1279px)
+    padding-bottom: 96px
+  @media (max-width: 1023px)
+    padding: 30px 0 80px 0
+  @media (max-width: 767px)
+    padding: 30px 0 70px 0
+  .container
+    flex-direction: column
+    @media (max-width: 767px)
+      padding: 0
+
+.contact-title
+  margin-bottom: 100px
+  @media (max-width: 1919px)
+    margin-bottom: 90px
+  @media (max-width: 1439px)
+    margin-bottom: 70px
+  @media (max-width: 1279px)
+    margin-bottom: 60px
+  @media (max-width: 1023px)
+    margin-bottom: 50px
+  @media (max-width: 767px)
+    padding: 0 20px
+.contact__cont
+  display: flex
+  justify-content: space-between
+  @media (max-width: 1023px)
+    flex-direction: column
+.contact__infos
+  padding-left: 140px
+  width: 40.4%
+  @media (max-width: 1919px)
+    padding-left: 116px
+  @media (max-width: 1599px)
+    padding-left: 110px
+  @media (max-width: 1439px)
+    padding-left: 90px
+  @media (max-width: 1279px)
+    padding-left: 0
+    width: calc(50% - 15px)
+  @media (max-width: 1023px)
+    width: 100%
+  @media (max-width: 767px)
+    padding: 0 20px
+.contact__info
+  padding: 60px 0
+  border-bottom: 1px solid rgba(240, 241, 248, 1)
+  @media (max-width: 1439px)
+    padding: 40px 0
+  @media (max-width: 1023px)
+    padding: 30px 0
+  &:first-child
+    padding-top: 0
+  &:last-child
+    padding-bottom: 0
+    border: none
+.contact-p
+  margin-top: 15px
+.contact__info-items
+  display: flex
+  flex-direction: column
+  margin-top: 30px
+  @media (max-width: 1279px)
+    margin-top: 20px
+  @media (max-width: 767px)
+    margin-top: 30px
+.contact__info-item
+  display: flex
+  align-items: center
+  margin-right: auto
+  &:hover
+    span
+      color: #C59217
+  &:not(:last-child)
+    margin-bottom: 30px
+    @media (max-width: 1279px)
+      margin-bottom: 20px
+  span
+    margin-left: 30px
+    transition-duration: .6s
+    @media (max-width: 1439px)
+      margin-left: 20px
+    @media (max-width: 767px)
+      margin-left: 15px
+  svg
+    @media (max-width: 1439px)
+      width: 30px
+      height: 30px
+    @media (max-width: 767px)
+      width: 25px
+      height: 25px
+.contact__form
+  display: flex
+  flex-direction: column
+  background-color: rgba(248, 248, 250, 1)
+  width: 49.1%
+  margin-bottom: auto
+  padding: 70px 142.5px
+  @media (max-width: 1919px)
+    padding: 70px 120px
+  @media (max-width: 1599px)
+    padding: 70px 110px
+  @media (max-width: 1439px)
+    padding: 50px 100px
+  @media (max-width: 1279px)
+    width: calc(50% - 15px)
+    padding: 50px 40px
+  @media (max-width: 1023px)
+    width: 100%
+    margin-top: 80px
+    padding: 50px 90px
+  @media (max-width: 767px)
+    padding: 30px 20px
+  .btn
+    margin: 50px auto 0 auto
+    background: none
+    appearance: none
+    outline: none
+    box-shadow: none
+    border: none
+    @media (max-width: 1279px)
+      margin-top: 30px
+.contact-sub
+  text-align: center
+  margin-bottom: 45px
+  @media (max-width: 1439px)
+    margin-bottom: 35px
+  @media (max-width: 767px)
+    margin-bottom: 30px
+.inputs
+  display: flex
+  margin-bottom: 20px
+  flex-direction: column
+.contact__label
+  position: relative
+  span
+    position: absolute
+    left: 20px
+    top: 15px
+    color: rgba(136, 139, 135, 1)
+    pointer-events: none
+    opacity: 0.6
+    transition-duration: .6s
+    @media (max-width: 1279px)
+      left: 10px
+.contact__label.err
+  .err-text
+    opacity: 1
+    visibility: visible
+
+  .input
+    border-color: rgba(184, 80, 97, 1)
+.err-text
+  opacity: 0
+  visibility: hidden
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 14px
+  line-height: 150%
+  color: #B85061
+  top: 50px
+  left: 0
+  transition-duration: .6s
+  position: absolute
+.input
+  outline: none
+  text-shadow: none
+  appearance: none
+  border-radius: 0
+  border: none
+  background: none
+  color: rgba(92, 95, 91, 1)
+  border-bottom: 1px solid rgba(221, 222, 231, 1)
+  width: 100%
+  padding: 15px 20px
+  transition-duration: .6s
+  resize: none
+  @media (max-width: 1279px)
+    padding: 15px 10px
+  &:not(:last-child)
+    margin-bottom: 40px
+  &::placeholder
+    opacity: 0.6
+    background: red
+  &:hover
+    border-color: rgba(136, 139, 135, 1)
+  &:focus
+    border-color: rgba(221, 222, 231, 1)!important
+.input:focus~ span
+  transform: translateY(-30px)!important
+  left: 0!important
+.input:focus~.err-text
+  opacity: 0
+  visibility: hidden
+.contact__socials
+  margin-top: 30px
+  display: flex
+  @media (max-width: 1279px)
+    margin-top: 20px
+  @media (max-width: 767px)
+    margin-top: 30px
+.contact__social
+  width: 52px
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 42px
+  border: 1px solid #373A36
+  border-radius: 20px
+  transition-duration: .8s
+  &:not(:last-child)
+    margin-right: 30px
+    @media (max-width: 767px)
+      margin-right: 20px
+  &:hover
+    background: rgba(55, 58, 54, 1)
+    svg
+      path
+        fill: #FFFFFF
+  svg
+    path
+      transition-duration: .8s
+
+.contact-form-p
+  display: none
+  text-align: center
+  margin-bottom: 30px
+  @media (max-width: 767px)
+    display: block
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

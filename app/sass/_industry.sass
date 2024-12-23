@@ -1,0 +1,99 @@
+.industry
+  background: rgba(248, 248, 250, 1)
+  padding: 100px 0
+  @media (max-width: 1919px)
+    padding: 90px 0
+  @media (max-width: 1439px)
+    padding: 70px 0
+  @media (max-width: 1279px)
+    padding: 60px 0
+  @media (max-width: 1023px)
+    padding: 50px 0
+  .container
+    flex-direction: column
+.industry__top
+  display: flex
+  align-items: center
+  margin-bottom: 60px
+  @media (max-width: 1439px)
+    margin-bottom: 40px
+  @media (max-width: 1279px)
+    margin-bottom: 30px
+    align-items: center
+.industry-title
+  @media (max-width: 767px)
+    max-width: 185px
+.industry__slider
+  width: 100%
+.industry__img
+  width: 100%
+  height: 270px
+  @media (max-width: 1919px)
+    height: 224px
+  @media (max-width: 1599px)
+    height: 204px
+  @media (max-width: 1439px)
+    height: 184px
+  @media (max-width: 1279px)
+    height: 143px
+  @media (max-width: 1023px)
+    height: 169px
+  //position: relative
+  //&:before
+  //  content: ''
+  //  position: absolute
+  //  top: 0
+  //  left: 0
+  //  width: 100%
+  //  height: 100%
+  //  background: linear-gradient(0deg, rgba(40, 41, 50, 0.6), rgba(40, 41, 50, 0.6))
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(40, 41, 50, 0.6)
+.industry__img-text
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 2
+  color: #FFFFFF
+  text-align: center
+  width: 400px
+  @media (max-width: 1279px)
+    width: 244px
+  @media (max-width: 1023px)
+    width: 100%
+  @media (max-width: 767px)
+    width: 240px
+.industry__dots
+  display: none
+  justify-content: center
+  margin-top: 20px
+  @media (max-width: 1279px)
+    display: flex
+  @media (max-width: 767px)
+    margin-top: 15px
+.industry-dot
+  width: 10px
+  height: 10px
+  border-radius: 10px
+  cursor: pointer
+  border: 1px solid #DDDEE7
+  transition-duration: 1s
+  &:not(:last-child)
+    margin-right: 8px
+.industry-dot.active
+  width: 15px
+  background: rgba(85, 28, 37, 1)
+  border-color: rgba(85, 28, 37, 1)
+
+

@@ -1,0 +1,617 @@
+.header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 100
+  transition-duration: .4s
+  .container
+    align-items: center
+    padding-top: 20px
+    padding-bottom: 25px
+    @media (max-width: 1599px)
+      padding-bottom: 20px
+    @media (max-width: 1439px)
+      padding-top: 15px
+      padding-bottom: 15px
+    @media (max-width: 767px)
+      padding-top: 10px
+      padding-bottom: 10px
+.header__logo
+  display: flex
+  position: relative
+  @media (max-width: 1599px)
+    width: 133px
+    height: 55px
+  @media (max-width: 1439px)
+    width: 109px
+    height: 45px
+  @media (max-width: 767px)
+    width: 95px
+    height: 40px
+  svg
+    transition-duration: .4s
+    width: 100%
+    height: 100%
+    &:last-child
+      position: absolute
+      left: 0
+      top: 0
+      opacity: 0
+      visibility: hidden
+.header__menu
+  display: flex
+  margin-left: 60px
+  margin-top: 13px
+  @media (max-width: 1599px)
+    margin-left: 50px
+    margin-top: 21px
+  @media (max-width: 1439px)
+    margin-top: 9px
+    margin-left: 40px
+  @media (max-width: 1279px)
+    display: none
+  .header__item
+    position: relative
+    &:nth-child(4)
+      .header__item-top
+        &:after
+          display: none
+    &:hover
+      svg
+        transform: rotate(180deg)
+        margin-top: 0!important
+      .header__item-bottom
+        opacity: 1
+        visibility: visible
+        transform: translateX(-50%) translateY(100%)
+    &:not(:last-child)
+      margin-right: 60px
+      @media (max-width: 1599px)
+        margin-right: 50px
+      @media (max-width: 1439px)
+        margin-right: 40px
+  .header__item-top
+    font-family: PT Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    transition-duration: .4s
+    font-size: 18px
+    display: flex
+    line-height: 23px
+    cursor: pointer
+    color: #FFFFFF
+    position: relative
+    align-items: center
+    @media (max-width: 1599px)
+      font-size: 16px
+      line-height: 21px
+    @media (max-width: 1439px)
+      font-size: 14px
+      line-height: 18px
+    &:hover
+      &:after
+        opacity: 1
+        visibility: visible
+        transform: translateY(0)
+        background: #C59217
+    &:after
+      content: ''
+      position: absolute
+      bottom: -10px
+      left: 0
+      opacity: 0
+      visibility: hidden
+      pointer-events: none
+      width: 100%
+      height: 1px
+      background: #373A36
+      transform: translateY(-10px)
+      transition-duration: 0.8s
+    svg
+      display: none
+      transition-duration: .4s
+  .header__item-bottom
+    position: absolute
+    transition-duration: .4s
+    padding-top: 27px
+    left: 50%
+    transform: translateX(-50%) translateY(calc(100% + 20px))
+    bottom: 0
+    opacity: 0
+    visibility: hidden
+    .header__item-bottom-wrapper
+      display: flex
+      flex-direction: column
+      padding: 30px
+      background: #FFFFFF
+      transition-duration: .2s
+      z-index: 10
+      position: relative
+      &:before
+        content: ''
+        width: 25px
+        height: 25px
+        position: absolute
+        top: -13px
+        left: 50%
+        transform: translateX(-50%) rotate(45deg)
+        background: #FFFFFF
+      .header__bottom-link
+        font-family: PT Sans, sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 18px
+        line-height: 23px
+        white-space: nowrap
+        color: #373A36
+        &:not(:last-child)
+          margin-bottom: 25px
+        &:hover
+          color: rgba(55, 58, 54, 1)
+          font-weight: 700
+  .header__item.dropdown
+    .header__item-top
+      svg
+        display: block
+        margin-left: 8px
+
+.header__right
+  margin-left: auto
+  display: flex
+  align-items: center
+  margin-top: 9px
+  @media (max-width: 1599px)
+    margin-top: 12px
+  @media (max-width: 1439px)
+    margin-top: 3px
+  @media (max-width: 767px)
+    margin-top: 4.5px
+.header__langs
+  position: relative
+  display: flex
+  margin-right: 30px
+  @media (max-width: 767px)
+    display: none
+  svg
+    cursor: pointer
+    path
+      transition-duration: .4s
+  &:hover
+    .header__langs-cont
+      opacity: 1
+      visibility: visible
+      transform: translateX(-50%) translateY(100%)
+.header__langs-cont
+  padding-top: 27px
+  position: absolute
+  left: 50%
+  bottom: 0
+  opacity: 0
+  visibility: hidden
+  transform: translateX(-50%) translateY(calc(100% + 20px))
+  transition-duration: .4s
+.header__langs-wrapper
+  display: flex
+  transition-duration: .2s
+  flex-direction: column
+  padding: 30px
+  background: #FFFFFF
+  position: relative
+  &:before
+    content: ''
+    width: 25px
+    height: 25px
+    position: absolute
+    top: -13px
+    left: 50%
+    transform: translateX(-50%) rotate(45deg)
+    background: #FFFFFF
+.header-lang
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 23px
+  color: #888B87
+  cursor: pointer
+  &:not(:last-child)
+    margin-bottom: 30px
+  &:hover
+    font-weight: 700
+    color: rgba(55, 58, 54, 1)
+.header-lang.active
+  color: #373A36
+  font-weight: bold
+.header__search
+  margin-right: 30px
+  display: flex
+  cursor: pointer
+  margin-bottom: 0.5px
+  @media (max-width: 767px)
+    margin-right: 25px
+
+  svg
+    path
+      transition-duration: .4s
+.header__btn
+  cursor: pointer
+  width: 100%
+  @media (max-width: 1279px)
+    display: none
+.header__btn-cont
+  display: flex
+  border: 1px solid #FFFFFF
+  border-radius: 40px
+  align-items: center
+  transition-duration: 1s
+  padding: 9px 20px 9px 25px
+  svg
+    path
+      transition-duration: 1s
+.header__btn-text
+  margin-right: 8px
+  transition-duration: 1s
+  color: #FFFFFF
+  white-space: nowrap
+.header__burger
+  width: 24px
+  height: 20px
+  flex-direction: column
+  justify-content: space-between
+  cursor: pointer
+  position: relative
+  display: none
+  @media (max-width: 1279px)
+    display: flex
+  div
+    width: 100%
+    height: 2px
+    background: #FFFFFF
+    border-radius: 5px
+    position: absolute
+    transition-duration: .8s
+    &:first-child
+      left: 0
+      top: 0
+    &:nth-child(2)
+      left: 0
+      top: 50%
+      transform: translateY(-50%)
+    &:last-child
+      left: 0
+      bottom: 0
+
+.header__search-full
+  display: none
+  margin: auto 30px 4.5px 60px
+  width: 100%
+  max-width: 1244px
+  border-bottom: 1px solid #DDDEE7
+  @media (max-width: 1919px)
+    margin: auto 30px 0 60px
+  @media (max-width: 767px)
+    position: fixed
+    width: calc(100vw - 40px)
+    left: 50%
+    transform: translateX(-50%)
+    margin: 0
+    top: 81px
+    z-index: 100
+.header__search-full-btn
+  cursor: pointer
+  margin-right: 20px
+  margin-bottom: 10px
+  display: flex
+.header__search-full-input-wrapper
+  width: 100%
+  margin-right: 20px
+.header__search-full-input
+  width: 100%
+  padding: 3px 0 10px 0
+  background: none
+  appearance: none
+  outline: none
+  border: none
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 130%
+  color: #5C5F5B
+  &::placeholder
+    font-family: PT Sans, sans-serif
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 130%
+    color: #888B87
+    opacity: 1
+.header__search-full-close
+  cursor: pointer
+  display: flex
+  margin-bottom: 10px
+.header__results
+  display: flex
+  flex-direction: column
+  width: calc(100% - 526px)
+  left: 50%
+  transform: translateX(-50%) translateY(calc(100% + 20px))
+  bottom: 1px
+  background: #F8F8FA
+  position: absolute
+  padding: 20px 72px 40px 72px
+  transition-duration: .4s
+  opacity: 0
+  visibility: hidden
+  @media (max-width: 1023px)
+    width: 100%
+    left: 0
+    transform: translateX(0) translateY(calc(100% + 20px))
+  @media (max-width: 767px)
+    height: calc(100vh - 59px)
+    border-top: 1px solid #DDDEE7
+    padding: 54px 20px 20px 20px
+  .btn
+    @media (max-width: 1279px)
+      display: flex
+      min-height: 38px
+    svg
+      z-index: 1
+.header__results-wrapper
+  height: 371px
+  overflow: auto
+  @media (max-width: 767px)
+    height: 100%
+.header__result
+  display: flex
+  flex-direction: column
+  padding: 20px 0
+  &:not(:last-child)
+    border-bottom: 1px solid #DDDEE7
+.header__result-top
+  display: flex
+  align-items: center
+  margin-bottom: 17.5px
+  @media (max-width: 767px)
+    margin-bottom: 14px
+  svg
+    margin: 0 15px
+.header-result-name
+  color: #012169
+.header-result-date
+  color: #5C5F5B
+.header_result-btn
+  margin: 30px auto 0 auto
+  overflow: hidden
+  display: flex
+  width: auto
+  .btn-text
+    position: relative
+    z-index: 2
+.header-result-title
+  margin-bottom: 15px
+.header-result-p
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 16px
+  line-height: 130%
+  color: #888B87
+
+
+// HEADER RESULTS
+.header.active_results
+  .header__results
+    opacity: 1
+    visibility: visible
+    transform: translateX(-50%) translateY(100%)
+    @media (max-width: 1023px)
+      transform: translateX(0) translateY(100%)
+.header.white
+  background: #FFFFFF
+  .header__item-bottom-wrapper
+    border: 1px solid #F0F1F8
+    &:before
+      border: 1px solid #F0F1F8
+      border-bottom: none
+      border-right: none
+  .header__langs
+    .header__langs-wrapper
+      border: 1px solid #F0F1F8
+      &:before
+        border: 1px solid #F0F1F8
+        border-bottom: none
+        border-right: none
+  .header__logo
+    svg
+      &:first-child
+        opacity: 0
+        visibility: hidden
+      &:last-child
+        opacity: 1
+        visibility: visible
+  .header__langs
+    svg
+      path
+        fill: rgba(55, 58, 54, 1)
+  .header__search
+    svg
+      path
+        fill: rgba(55, 58, 54, 1)
+  .header__btn
+    &:hover
+      .header__btn-cont
+        border-color: #551c25
+      .header__btn-text
+        color: #FFFFFF
+      svg
+        path
+          fill: #FFFFFF
+    svg
+      path
+        fill: rgba(55, 58, 54, 1)
+  .header__burger
+    div
+      background: rgba(55, 58, 54, 1)
+    &:hover
+      .btn-cont
+        border-color: #551C25
+      svg
+        path
+          fill: #FFFFFF
+      .header__btn-text
+        color: #FFFFFF
+
+  .header__btn-cont
+    border-color: rgba(55, 58, 54, 1)
+  .header__btn-text
+    color: rgba(55, 58, 54, 1)
+  .header__item-top
+    color: rgba(55, 58, 54, 1)
+    svg
+      path
+        fill: rgba(55, 58, 54, 1)
+//HEADER HIDE
+.header.hide
+  transform: translateY(-100%)
+// HEADER SCROLL
+.header.scroll
+  background: #F8F8FA
+  .header__burger
+    div
+      background: #373A36
+  .header__item-bottom-wrapper
+    border: 1px solid #F0F1F8
+    &:before
+      border: 1px solid #F0F1F8
+      border-bottom: none
+      border-right: none
+  .header__langs
+    .header__langs-wrapper
+      border: 1px solid #F0F1F8
+      &:before
+        border: 1px solid #F0F1F8
+        border-bottom: none
+        border-right: none
+    svg
+      path
+        fill: #373A36
+  .header__search
+    svg
+      path
+        fill: #373A36
+  .header__logo
+    svg
+      &:first-child
+        opacity: 0
+        visibility: hidden
+      &:last-child
+        opacity: 1
+        visibility: visible
+  .header__btn
+    &:hover
+      .header__btn-text
+        color: #FFFFFF
+      svg
+        path
+          fill: #FFFFFF
+  .header__btn-cont
+    border-color: #373A36
+    svg
+      path
+        fill: #373A36
+  .header__btn-text
+    color: #373A36
+  .header__item-top
+    color: #373A36
+    svg
+      path
+        fill: #373A36
+
+
+// HEADER SEARCH
+.header.active_search
+  background: #F8F8FA
+  .header__burger
+    div
+      background: #373A36
+  .header__logo
+    svg
+      &:first-child
+        opacity: 0
+        visibility: hidden
+      &:last-child
+        opacity: 1
+        visibility: visible
+  .header__menu
+    display: none
+  .header__langs
+    display: none
+  .header__search
+    display: none
+    @media (max-width: 767px)
+      display: flex
+    svg
+      path
+        @media (max-width: 767px)
+          fill: #373A36
+  .header__search-full
+    display: flex
+  .header__btn
+    &:hover
+      .header__btn-cont
+        border-color: #551C25
+      .header__btn-text
+        color: #FFFFFF
+      svg
+        path
+          fill: #FFFFFF
+  .header__btn-cont
+    border-color: #373A36
+    svg
+      path
+        fill: #373A36
+  .header__btn-text
+    color: #373A36
+.header.active
+  .header__burger
+    div
+      &:first-child
+        transform: rotate(45deg)
+        top: 9px
+      &:nth-child(2)
+        transform: translateY(-50%) translateX(100%)
+        opacity: 0
+        visibility: hidden
+      &:last-child
+        transform: rotate(-45deg)
+        bottom: 9px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

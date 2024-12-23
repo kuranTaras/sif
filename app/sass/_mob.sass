@@ -1,0 +1,116 @@
+.mob
+  position: fixed
+  display: none
+  left: 0
+  top: 75px
+  opacity: 0
+  visibility: hidden
+  transform: translateX(100%) scale(0)
+  z-index: 199
+  width: 100%
+  height: calc(100vh - 75px)
+  background: #F8F8FA
+  transition-duration: .8s
+  transform-origin: top right
+  border-top: 1px solid #DDDEE7
+  @media (max-width: 1279px)
+    display: flex
+  @media (max-width: 767px)
+    top: 60px
+    height: calc(100vh - 60px)
+  .container
+    padding: 20px 20px 100px 20px
+    overflow: auto
+    flex-direction: column
+  .btn
+    margin: 30px auto 0 0
+    min-height: 38px
+.mob__menu
+  display: flex
+  flex-direction: column
+  margin-bottom: 30px
+.mob__link
+  display: flex
+  flex-direction: column
+  border-bottom: 1px solid #F0F1F8
+  &:first-child
+    .mob__link-top
+      padding: 0 0 20px 0
+.mob__link.active
+  svg
+    transform: rotate(180deg)
+svg
+  transition-duration: .4s
+.mob__link-top
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 23px
+  color: #373A36
+  padding: 20px 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+.mob__links-bot
+  flex-direction: column
+  padding-left: 20px
+  overflow: hidden
+  display: block
+  transition-duration: .4s
+.mob__links-bot.active
+  margin-top: 5px
+  margin-bottom: 20px
+.mob__link-bot
+  font-family: PT Sans, sans-serif
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 23px
+  display: block
+  color: #888B87
+  &:not(:last-child)
+    margin-bottom: 25px
+.mob__link-top.active
+  svg
+    transform: rotate(180deg)
+.mob__langs
+  display: flex
+  align-items: center
+  margin-top: auto
+  .mob__lansg-wrapper
+    display: flex
+    margin-left: 25px
+    .mob-lang
+      font-family: PT Sans, sans-serif
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 21px
+      color: #888B87
+      &:not(:last-child)
+        margin-right: 20px
+    .mob-lang.active
+      font-weight: bold
+      color: #373A36
+
+.mob.active
+  opacity: 1
+  visibility: visible
+  transform: translateX(0) scale(1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
